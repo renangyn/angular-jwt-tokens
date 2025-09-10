@@ -31,8 +31,14 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
 import { HttpClientModule } from '@angular/common/http';
 import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
+import { DropdownUfComponent } from './shared/dropdown-uf/dropdown-uf.component';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormBaseComponent } from './shared/form-base/form-base.component';
+
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -50,7 +56,9 @@ import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-
     BotaoControleComponent,
     PromocoesComponent,
     DropdownUfComponent,
-    SeletorPassageiroComponent
+    SeletorPassageiroComponent,
+    LoginComponent,
+    FormBaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,9 +77,12 @@ import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-
     MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatCheckboxModule,
+    MatDividerModule,
+    MatRadioModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
