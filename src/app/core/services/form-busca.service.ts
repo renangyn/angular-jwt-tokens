@@ -68,7 +68,7 @@ export class FormBuscaService {
       this.formBusca.patchValue({
         tipo,
       })
-      console.log('Tipo de passagem alterado para: ', tipo)
+     // console.log('Tipo de passagem alterado para: ', tipo)
     }
   }
 

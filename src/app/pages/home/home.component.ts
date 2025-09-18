@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     this.servicoPromocao.listar()
       .subscribe(
         resposta => {
-          console.log(resposta)
+      //   console.log(resposta)
         }
       )
   }
