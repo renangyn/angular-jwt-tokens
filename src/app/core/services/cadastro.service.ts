@@ -21,7 +21,7 @@ export class CadastroService {
       'Authorization': `Bearer ${token}`
     });
 
-    return this.http.get<PessoaUsuaria>(`${this.apiUrl}/auth/cadastro`, {headers});
+    return this.http.get<PessoaUsuaria>(`${this.apiUrl}/auth/perfil`, {headers});
   }
 
     editarCadastro(pessoaUsuaria: PessoaUsuaria, token: string): Observable<PessoaUsuaria> {
