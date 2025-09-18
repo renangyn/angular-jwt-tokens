@@ -24,7 +24,7 @@ Se liga nessa lista de tudo que usaremos nesse curso:
 - `Angular`
 - `Angular CLI`
 - `Angular Material`
-- `Figma`
+- `Figmaa`
 
 E muito mais!
 
